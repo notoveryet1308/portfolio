@@ -16,29 +16,41 @@ const hideshow = keyframes`
 
 
 export const HeroWrapper = styled.div`
-
   height: 97vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   @media (min-width:1200px){
     width: 80%;
   }
   @media (max-width:1200px){
     width: 90%;
+    
   }
   @media (max-width: 600px){
-    display: none;
+    padding-top: 2rem;
+    width: 90%;
+    height: 92vh;
+    justify-content: center;
+    flex-direction: column-reverse;
+    /* background:blue; */
+  }
+  @media (max-width: 400px){
+    height: 85vh;
   }
   .circled-arrow{
     position: absolute;
-    top: 85vh;
+    top: 78vh;
     left: 50%;
     .line{
       
       animation: ${hideshow} 1s ease-in-out infinite;
     }
+
+    @media (max-width: 600px){
+      display: none;
+  }
   }
   
 `
@@ -49,15 +61,23 @@ export const LeftContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-top: 5rem;
+  @media (max-width: 600px){
+    height: 40vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
 `
 export const RightContent = styled.div`
   width: 35%; 
-  height: 60vh;
+  height: 100%;
   /* background: #333; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 2rem;
+  padding-top: 7rem;
   padding-left: 2rem;
   @media (max-width: 1039px){
     width: 45%;
@@ -65,6 +85,18 @@ export const RightContent = styled.div`
   @media (max-width: 768px){
     padding-top: 3rem;
     width: 48%;
+  }
+  @media (max-width: 600px){
+    width: 100%;
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  @media (max-width: 400px){
+    width: 100%;
+    height: 40vh;
+    /* background: #333; */
   }
 `
 export const MainTitle = styled.h1`
@@ -88,6 +120,16 @@ export const MainTitle = styled.h1`
   @media (max-width: 768px){
     font-size: 3rem;
   }
+  @media (max-width: 600px){
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+  @media (max-width: 400px){
+    font-size: 3rem;
+  }
+  @media (max-width: 310px){
+    font-size: 2.5rem;
+  }
 `
 export const SubText = styled.h3`
   color: #FDFFA5;
@@ -96,6 +138,14 @@ export const SubText = styled.h3`
   font-weight: 400;
   @media (max-width:900px){
     font-size:2rem;
+  }
+  @media (max-width: 600px){
+    font-size: 1.6rem;
+    /* background: #eee; */
+    text-align: center;
+  }
+  @media (max-width: 400px){
+    font-size: 1.4rem;
   }
 `
 export const ButtonBox = styled.div`
@@ -112,6 +162,10 @@ export const ButtonBox = styled.div`
     width: 10rem;
     margin-top: 3rem;
   }
+  @media (max-width: 600px){
+    margin:2rem 0;
+     
+  }
 `
 export const MyworkBtn = styled(Link)`
   text-decoration: none;
@@ -123,6 +177,10 @@ export const MyworkBtn = styled(Link)`
    padding: 1rem 1.5rem;
    @media (max-width: 768px){
     font-size: 1.6rem;
+  }
+  @media (max-width: 600px){
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
   }
 `
 export const SocilaMediaBox = styled.div`
@@ -136,6 +194,10 @@ export const IconImg = styled.img`
  height: 5rem;
  cursor: pointer;
  margin-right: .5rem;
+ @media (max-width: 600px){
+   width: 4rem;
+   height: 4rem;
+ }
 `
 export const HeroTextBox = styled.div`
   display: inline-block;
@@ -147,6 +209,9 @@ export const HeroTextBox = styled.div`
   }
   @media (max-width:900px){
     margin-top:.7rem;
+  }
+  @media (max-width: 600px){
+    margin-top: .3rem;
   }
 `
 export const HeroText = styled.h1`
@@ -175,5 +240,11 @@ visibility: hidden;
   }
   @media (max-width:900px){
     font-size: 3.8rem;
+  }
+  @media (max-width: 600px){
+    font-size: 3rem;
+  }
+  @media (max-width: 400px){
+    font-size: 2.5rem;
   }
 `

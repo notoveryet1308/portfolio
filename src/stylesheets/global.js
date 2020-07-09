@@ -23,4 +23,46 @@ export const Logo = styled.h1`
    font-weight: bold;
    color: #fff;
    cursor: pointer;
+   @media (max-width: 600px){
+     font-size: 2rem;
+   }
+`
+export const SectionName = styled.h1`
+  font-size: 15rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(51, 48, 48, 0.24);
+  position: absolute;
+  top: -2.9rem;
+  right: 0;
+  @media (max-width:1200px){
+    font-size: 12rem;
+    top: -2rem;
+  }
+  @media (max-width:768px){
+    font-size: 10rem;
+    top: -1.5rem;
+  }
+  @media (max-width:600px){
+    position: relative;
+    font-size: 8rem;
+    z-index: 23;
+    color:rgba(255, 254, 254, 0.41);
+    text-align: center;
+    margin-top: -3rem;
+  }
+  @media (max-width:400px){
+    font-size: 6rem;
+    z-index: 23;
+    text-align: center;
+    margin-top: -2rem;
+
+
+  }
+  @media (max-width:300px){
+    font-size: 4rem;
+    z-index: 23;
+    text-align: center;
+
+  }
 `

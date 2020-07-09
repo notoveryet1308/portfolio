@@ -87,7 +87,7 @@ function Index() {
           </HeroTextBox>
         </RightContent>
         <div className="circled-arrow">
-          <Link to="skills" smooth={true} duration={200} style={{ cursor: "pointer" }}>
+          <Link to="skills" smooth={true} duration={1000} style={{ cursor: "pointer" }}>
             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
               <line className="line" x1="10.5195" y1="15.2386" x2="18.072" y2="25.057" stroke="white" stroke-width="2" />

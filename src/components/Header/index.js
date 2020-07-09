@@ -6,10 +6,10 @@ import { Logo } from '../../stylesheets/global';
 
 const HeaderWrapper = styled.div`
   width: 100%;
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
-  z-index: 2;
+  left: 0; */
+  z-index: 7887;
   background: #000;
 `
 const Header = styled.header`
@@ -19,6 +19,8 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #000;
+
  @media (min-width:1200px){
     width: 80%;
   }
