@@ -4,6 +4,7 @@ import Header from './components/Header';
 import HeroSection from './components/Hero';
 import MobHeader from './components/mobile/header';
 import Skills from './components/Skill';
+import Works from './components/Works';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header/>
       <HeroSection/>
       <Skills/>
+      <Works/>
     </div>
   );
 }

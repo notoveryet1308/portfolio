@@ -13,15 +13,18 @@ const Container = styled.div`
 `
 const SkillWrapper = styled.div`
   margin: 0 auto;
+  padding-bottom: 6rem;
   @media (min-width:1200px){
     width: 80%;
-    height: 80vh;
+    height: auto;
+    
   }
   @media (max-width:1200px){
     width: 90%;
   }
-  @media (min-width:769px){
-    height: 75vh;
+
+  @media screen and (max-width: 600px){
+    padding-bottom: 5rem;
   }
   
 `
@@ -41,8 +44,8 @@ const SkillDisplayBox = styled.div`
 `
 function index() {
   return (
-    <Container>
-      <SkillWrapper id='skills'>
+    <Container id='skills'>
+      <SkillWrapper >
         <SectionName>Skills.</SectionName>
         <SkillDisplayBox>
           <SkillCard

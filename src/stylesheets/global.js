@@ -44,6 +44,9 @@ export const SectionName = styled.h1`
     top: -1.5rem;
   }
   @media (max-width:600px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     font-size: 8rem;
     z-index: 23;
