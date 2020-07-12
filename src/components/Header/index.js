@@ -63,25 +63,25 @@ function Index() {
             smooth={true}
             duration={500}
             color='#ED284C'
-          >skills</SmootLink>
+          >Skills</SmootLink>
           <SmootLink
             to="works"
             smooth={true}
             duration={500}
             color='#DD15C9'
-          >works</SmootLink>
+          >Works</SmootLink>
           <SmootLink
             to="aboutme"
             smooth={true}
             duration={500}
             color='#30E6F1'
-          >about me</SmootLink>
+          >About me</SmootLink>
           <SmootLink
             to="aboutme"
             smooth={true}
             duration={500}
             color='#fff'
-          >contact me</SmootLink>
+          >Contact me</SmootLink>
         </Nav>
       </Header>
 

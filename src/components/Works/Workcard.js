@@ -59,7 +59,8 @@ const WorkInfo = styled.div`
  background-color: #fff;
  margin-top: 8rem;
  margin-left: 2rem;
- border-radius: 1rem;
+ border-radius: 1rem 1rem 0 1rem;
+ overflow: hidden;
  @media screen and (max-width: 1125px){
    margin-top: 3rem;
  }
@@ -126,6 +127,7 @@ const Subtitle = styled.p`
 const Sumarry = styled.p`
   color: #737373;
   font-size: 1.6rem;
+  height: 12rem;
   padding:0 2rem;
   @media screen and (max-width: 850px){
     font-size: 1.5rem;
@@ -152,11 +154,10 @@ const Tech = styled.p`
 `
 const ButtonBox = styled.div`
   width: 100%;
-  height: 5rem;
-  margin-top: 1rem;
+  /* background: #333; */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 4.3rem;
+  justify-content: flex-end;
   @media screen and (max-width: 850px){
     height: 4rem;
   }
@@ -170,12 +171,21 @@ const Btn = styled.a`
   height: 3rem;
   background: #00B4A9;
   color: #fff;
-  margin-right: 2rem;
+  transition: all 300ms ease;
+  /* margin-right: 2rem; */
   font-size: 1.8rem;
-  border-radius: 3px;
+  /* border-radius: 3px; */
   @media screen and (max-width: 850px){
     font-size: 1.6rem;
     width: 8rem;
+  }
+  &:hover{
+    transform: scale(1.5);
+    background: #FF70AC;
+    color:#eee;
+    transition: all 500ms ease;
+    z-index: 111;
+    font-size:1.6rem;
   }
 `
 
