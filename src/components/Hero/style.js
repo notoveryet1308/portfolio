@@ -56,23 +56,30 @@ export const HeroWrapper = styled.div`
 `
 export const LeftContent = styled.div`
   width: 50%; 
-  height: 60vh;
+  /* height: 60vh; */
   /* background: #333; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 5rem;
+  @media (max-width: 1150px){
+    width: 60%;
+    /* height: 100vh; */
+    /* background: #333; */
+  }
+ 
   @media (max-width: 600px){
-    height: 40vh;
+    /* height: 40vh; */
     width: 100%;
     justify-content: center;
     align-items: center;
     padding-top: 0;
+    /* background: #333; */
   }
 `
 export const RightContent = styled.div`
-  width: 35%; 
-  height: 100%;
+  width: 30%; 
+  /* height: 100%; */
   /* background: #333; */
   display: flex;
   flex-direction: column;
@@ -80,52 +87,63 @@ export const RightContent = styled.div`
   padding-top: 7rem;
   padding-left: 2rem;
   @media (max-width: 1039px){
-    width: 45%;
+    width: 35%;
+  }
+  @media (max-width: 950px){
+    padding-top: 9rem;
+  }
+  @media (max-width: 840px){
+    width: 38%;
+  }
+   @media (max-width: 750px){
+     width: 45%;
   }
   @media (max-width: 768px){
-    padding-top: 3rem;
-    width: 48%;
+    padding-top: 8rem;
+    
   }
   @media (max-width: 600px){
     width: 100%;
-    height: 45vh;
+    /* height: 40vh; */
     justify-content: center;
     align-items: center;
     padding: 0;
+    /* background: #333; */
   }
   @media (max-width: 400px){
     width: 100%;
-    height: 40vh;
+    /* height: 40vh; */
     /* background: #333; */
   }
 `
 export const MainTitle = styled.h1`
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  color:#fff;
+  /* color:#ED284C; */
+  color: #fff;
   margin-top: 12rem;
-  @media (max-width:1150px){
-    font-size: 5rem;
-    margin-top: 10rem;
+  @media (max-width:935px){
+    font-size: 4rem;
+    /* margin-top: 3rem; */
   }
-  @media (max-width:1000px){
-    font-size: 4.5rem;
-    margin-top: 8rem;
-  }
-  @media (max-width:900px){
+  @media (max-width:810px){
     font-size: 3.5rem;
-    margin-top: 8rem;
+    /* margin-top: 3rem; */
   }
   @media (max-width: 768px){
+    margin-top: 7rem;
     font-size: 3rem;
   }
   @media (max-width: 600px){
     font-size: 3.5rem;
     margin-top: 2rem;
   }
-  @media (max-width: 400px){
+  @media (max-width: 450px){
     font-size: 3rem;
+  }
+  @media (max-width: 380px){
+    font-size: 2.5rem;
   }
   @media (max-width: 310px){
     font-size: 2.5rem;
@@ -133,19 +151,19 @@ export const MainTitle = styled.h1`
 `
 export const SubText = styled.h3`
   color: #FDFFA5;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  font-weight: 400;
-  @media (max-width:900px){
+  /* text-transform: capitalize; */
+  font-size: 1.7rem;
+  font-weight:300;
+  /* @media (max-width:900px){
     font-size:2rem;
-  }
+  } */
   @media (max-width: 600px){
     font-size: 1.6rem;
     /* background: #eee; */
     text-align: center;
   }
   @media (max-width: 400px){
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 `
 export const ButtonBox = styled.div`
@@ -153,17 +171,23 @@ export const ButtonBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #DD15C9;
-  margin-top:4rem;
+  background: #ED284C;
+  margin-top:3rem;
   margin-bottom: 3rem;
-  border-radius: .2rem;
-
+  border-radius: 0;
+  cursor:pointer;
+  &:hover{
+    background: #ED2823;
+  }
+  @media (max-width: 840px){
+      margin: 2rem 0;
+  }
   @media (max-width: 768px){
-    width: 10rem;
+    width: 13rem;
     margin-top: 3rem;
   }
   @media (max-width: 600px){
-    margin:2rem 0;
+    margin:1rem 0;
      
   }
 `
@@ -177,6 +201,9 @@ export const MyworkBtn = styled(Link)`
    padding: 1rem 1.5rem;
    @media (max-width: 768px){
     font-size: 1.6rem;
+  }
+  @media (max-width: 840px){
+      padding: .6rem 1rem;
   }
   @media (max-width: 600px){
     padding: .5rem 1rem;
@@ -239,7 +266,7 @@ visibility: hidden;
     font-size: 4rem;
   }
   @media (max-width:900px){
-    font-size: 3.8rem;
+    font-size: 3.5rem;
   }
   @media (max-width: 600px){
     font-size: 3rem;
@@ -247,4 +274,10 @@ visibility: hidden;
   @media (max-width: 400px){
     font-size: 2.5rem;
   }
+`
+export const HideText = styled.span`
+ @media (max-width: 600px){
+   display: none;
+ }
+ 
 `

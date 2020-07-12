@@ -21,7 +21,7 @@ export const Logo = styled.h1`
    font-size: 2.5rem;
    font-family: 'Poppins', sans-serif;
    font-weight: bold;
-   color: #F6FA2F;
+   color: #fff;
    cursor: pointer;
    @media (max-width: 600px){
      font-size: 2rem;
@@ -32,6 +32,7 @@ export const SectionName = styled.h1`
   font-weight: bold;
   text-transform: uppercase;
   color: rgba(51, 48, 48, 0.24);
+  /* color:#fff; */
   position: absolute;
   top: -2.9rem;
   right: 0;

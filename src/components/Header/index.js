@@ -44,7 +44,7 @@ const SmootLink = styled(Link)`
   text-decoration: none;
   margin: 0 1rem;
   cursor: pointer;
-  font-weight: 300;
+  font-weight: 400;
 
   @media (max-width: 768px){
     font-size: 1.6rem;
@@ -56,12 +56,13 @@ function Index() {
   return (
     <HeaderWrapper>
       <Header>
-        <Logo onClick={() => scroll.scrollToTop()}>rahul.dev</Logo>
+        <Logo onClick={() => scroll.scrollToTop()}>&lt;rahulraj&gt;</Logo>
         <Nav>
           <SmootLink
             to="skills"
             smooth={true}
             duration={500}
+            
             color='#ED284C'
           >Skills</SmootLink>
           <SmootLink
@@ -75,16 +76,15 @@ function Index() {
             smooth={true}
             duration={500}
             color='#30E6F1'
-          >About me</SmootLink>
+          >About</SmootLink>
           <SmootLink
             to="aboutme"
             smooth={true}
             duration={500}
             color='#fff'
-          >Contact me</SmootLink>
+          >Contact</SmootLink>
         </Nav>
       </Header>
-
     </HeaderWrapper>
   )
 }

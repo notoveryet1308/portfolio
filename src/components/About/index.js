@@ -159,13 +159,14 @@ function index() {
         <Content>
           <Textbox>
             <p className='para'>Hi, I am Rahul Raj.<br></br><br></br>
-             A <span className="span">self taught Frontend developer</span>(client side of the web) but i also have experience with fullstack development with Express.Js & MongoDB. I recently completed B-Tech in Information Technology from Guru Nanak Dev Engineering College, Ludhiana Punjab.<br></br>
+             A <span className="span">self taught Frontend developer</span> (client side of the web) but i do have some experience with fullstack development with Express.Js & MongoDB. 
+             I recently completed B-Tech in Information Technology from Guru Nanak Dev Engineering College, Ludhiana Punjab.<br></br>
               <br></br>
             I love working and creating web products as I could instanlty see my work done. After learning React.Js and working on several projects with this technology, working on web technologies have become so much fun for me. I enjoy this process of creating something new.
           </p>
           </Textbox>
           <Personal>
-            <h3 className="heading">My favourite music artists😍</h3>
+            <h3 className="heading" >My favourite music artists<span role="img" aria-label="string">😍</span></h3>
             <div className="artistbox">
               <Artistname>Prateek Khuhad</Artistname>
               <Artistname>Ritivz</Artistname>
