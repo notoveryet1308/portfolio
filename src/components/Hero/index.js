@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { TimelineMax, Expo } from 'gsap';
+import { gsap, TimelineMax, Expo } from 'gsap';
 import { Link } from 'react-scroll';
 import { Container } from '../../stylesheets/global';
 import github from '../../img/github.svg';
@@ -31,9 +31,11 @@ function Index() {
   const repeat = useRef(null);
 
   useEffect(() => {
-    const tl = new TimelineMax();
-    tl.staggerTo([design.current, prototype.current, create.current, deliver.current, repeat.current],
-      2, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut }, .6);
+    gsap.to(design.current, 2, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut }, );
+    gsap.to( prototype.current, 3, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut }, );
+    gsap.to( create.current, 4, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut }, );
+    gsap.to(deliver.current, 5, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut }, );
+    gsap.to(repeat.current, 6, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut }, );
   }, [])
   return (
     <Container bgColor="#000">
