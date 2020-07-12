@@ -42,7 +42,7 @@ function Index() {
           <MainTitle>Web Developer</MainTitle>
           <SubText>i keep learning so i keep doing better</SubText>
           <ButtonBox>
-            <MyworkBtn>My Work</MyworkBtn>
+            <MyworkBtn to="works" duration={1000} smooth={true}>My Work</MyworkBtn>
           </ButtonBox>
           <SocilaMediaBox>
             <a

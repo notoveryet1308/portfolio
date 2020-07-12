@@ -11,6 +11,7 @@ const Container = styled.div`
   width: 100%;
   background-color: #DD15C9;
   padding-top: .1rem;
+  padding-bottom: 8rem;
 `
 const WorkWrapper = styled.div`
   display: flex;
@@ -18,7 +19,7 @@ const WorkWrapper = styled.div`
   padding-top: 15rem;
   position: relative;
   margin: 0 auto;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
   @media (min-width:1200px){
     width: 80%;
   }
@@ -33,11 +34,12 @@ const WorkWrapper = styled.div`
   }
   @media (max-width: 715px){
     justify-content: center;
-    padding-top: 11rem;
+    padding-top: 12rem;
+    
   }
   @media (max-width: 590px){
     /* justify-content: center; */
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
 `
 
