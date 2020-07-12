@@ -31,7 +31,7 @@ export const SectionName = styled.h1`
   font-size: 15rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgba(51, 48, 48, 0.24);
+  color: rgba(51, 48, 48, 0.6);
   /* color:#fff; */
   position: absolute;
   top: -2.9rem;
@@ -51,7 +51,7 @@ export const SectionName = styled.h1`
     position: relative;
     font-size: 8rem;
     z-index: 23;
-    color:rgba(255, 254, 254, 0.7);
+    /* color:rgba(255, 254, 254, 0.7); */
     text-align: center;
     margin-top: -3rem;
   }

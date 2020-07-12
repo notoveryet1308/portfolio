@@ -78,9 +78,9 @@ function Index() {
             color='#30E6F1'
           >About</SmootLink>
           <SmootLink
-            to="aboutme"
+            to="contact"
             smooth={true}
-            duration={500}
+            duration={800}
             color='#fff'
           >Contact</SmootLink>
         </Nav>

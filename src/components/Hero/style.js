@@ -152,7 +152,7 @@ export const MainTitle = styled.h1`
 export const SubText = styled.h3`
   color: #FDFFA5;
   /* text-transform: capitalize; */
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight:300;
   /* @media (max-width:900px){
     font-size:2rem;
