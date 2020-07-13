@@ -31,6 +31,10 @@ const Mantra = styled.div`
   text-transform: uppercase;
   border-radius: .3rem;
   text-align: center;
+  @media (max-width: 600px){
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
 `
 export const SocilaMediaBox = styled.div`
   display: flex;

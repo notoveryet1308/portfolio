@@ -20,6 +20,7 @@ const ContactWrapper = styled.div`
   }
   @media (max-width: 600px){
     height: 80vh;
+    padding: 3rem 0;
   }
 `
 const Content = styled.div`
@@ -34,7 +35,7 @@ const Content = styled.div`
   margin-top: 3rem;
   @media (max-width: 600px){
     top:40%;
-    width: 90%;
+    width: 100%;
     margin-top: 2rem;
   }
 `
@@ -100,6 +101,10 @@ const GetInTouch = styled.button`
   border-radius: .5rem;
   font-size: 1.8rem;
   cursor:pointer;
+  @media (max-width: 600px){
+    width: 70%;
+    font-size: 1.6rem;
+  }
 `
 
 function index() {

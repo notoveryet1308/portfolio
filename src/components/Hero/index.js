@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { gsap,Expo } from 'gsap';
+import { gsap, Expo } from 'gsap';
 import { Link } from 'react-scroll';
 import { Container } from '../../stylesheets/global';
 import github from '../../img/github.svg';
@@ -28,17 +28,17 @@ import {
 
 function Index() {
   const design = useRef(null);
-  const prototype = useRef(null);
+  const research = useRef(null);
   const create = useRef(null);
   const deliver = useRef(null);
   const repeat = useRef(null);
 
   useEffect(() => {
-    gsap.to(design.current, 2, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut },);
-    gsap.to(prototype.current, 3, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut },);
-    gsap.to(create.current, 4, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut },);
-    gsap.to(deliver.current, 5, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut },);
-    gsap.to(repeat.current, 6, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut },);
+    gsap.from(research.current, 2, { css: { transform: "translateY(4rem)", zIndex: -2, }, opacity: 0, ease: Expo.easeInOut },);
+    gsap.from(design.current, 3, { css: { transform: "translateY(4rem)", zIndex: -2, }, opacity: 0, ease: Expo.easeInOut },);
+    gsap.from(create.current, 4, { css: { transform: "translateY(4rem)", zIndex: -2, }, opacity: 0, ease: Expo.easeInOut },);
+    gsap.from(deliver.current, 5, { css: { transform: "translateY(4rem)", zIndex: -2, }, opacity: 0, ease: Expo.easeInOut },);
+    gsap.from(repeat.current, 6, { css: { transform: "translateY(4rem)", zIndex: -2, }, opacity: 0, ease: Expo.easeInOut },);
   }, [])
   return (
     <Container bgColor="#000">
@@ -82,11 +82,10 @@ function Index() {
         </LeftContent>
         <RightContent>
           <HeroTextBox>
-            <HeroText ref={design}>DESIGN</HeroText>
+            <HeroText ref={research}>Research</HeroText>
           </HeroTextBox>
-          {/* <HeroText ref={design}>DESIGN</HeroText> */}
           <HeroTextBox>
-            <HeroText ref={prototype}>Prototype</HeroText>
+            <HeroText ref={design}>DESIGN</HeroText>
           </HeroTextBox>
           <HeroTextBox>
             <HeroText ref={create}>Create</HeroText>

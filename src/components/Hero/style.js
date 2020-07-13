@@ -255,9 +255,10 @@ export const HeroText = styled.h1`
  -webkit-background-clip: text;
  background-clip: text;
 color: transparent;
-transform: translateY(4rem);
-z-index: 2;
-visibility: hidden;
+transform: translateY(0);
+z-index: 200;
+visibility: visible;
+opacity: 1;
 /* animation-fill-mode: forwards; */
 @media (max-width:1150px){
    font-size: 4.5rem;
