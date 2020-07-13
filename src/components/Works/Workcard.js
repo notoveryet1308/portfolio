@@ -9,7 +9,7 @@ const WorkBox = styled.div`
   justify-content: flex-start;
   /* align-items: baseline; */
   margin-bottom: 5rem;
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 768px){
     display: none;
   }
 `

@@ -34,7 +34,7 @@ const WorkWrapper = styled.div`
   }
   @media (max-width: 715px){
     justify-content: center;
-    padding-top: 12rem;
+    padding-top: 5rem;
     
   }
   @media (max-width: 590px){

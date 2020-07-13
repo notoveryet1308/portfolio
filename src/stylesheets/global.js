@@ -21,7 +21,7 @@ export const Logo = styled.h1`
    font-size: 2.5rem;
    font-family: 'Poppins', sans-serif;
    font-weight: bold;
-   color: #F6FA2F;
+   color: #fff;
    cursor: pointer;
    @media (max-width: 600px){
      font-size: 2rem;
@@ -31,7 +31,8 @@ export const SectionName = styled.h1`
   font-size: 15rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgba(51, 48, 48, 0.24);
+  color: rgba(51, 48, 48, 0.6);
+  /* color:#fff; */
   position: absolute;
   top: -2.9rem;
   right: 0;
@@ -50,7 +51,7 @@ export const SectionName = styled.h1`
     position: relative;
     font-size: 8rem;
     z-index: 23;
-    color:rgba(255, 254, 254, 0.7);
+    /* color:rgba(255, 254, 254, 0.7); */
     text-align: center;
     margin-top: -3rem;
   }

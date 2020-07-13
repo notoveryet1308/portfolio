@@ -14,7 +14,7 @@ const SectionName = styled.h1`
   font-size: 15rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgba(51, 48, 48, 0.24);
+  color: rgba(51, 48, 48, 0.6);
   position: absolute;
   top: -2.9rem;
   right: 0;
@@ -29,7 +29,7 @@ const SectionName = styled.h1`
   @media (max-width:600px){
     font-size: 8rem;
     z-index: 23;
-    color:rgba(255, 254, 254, 0.41);
+    /* color:rgba(255, 254, 254, 0.41); */
     text-align: center;
     /* margin-top: rem; */
     top: -4.5rem;
@@ -56,6 +56,7 @@ const AboutWrapper = styled.div`
   }
   @media screen and (max-width: 600px){
     padding-top: 8rem;
+     padding-bottom: 7rem;
   }
 `
 const Content = styled.div`
@@ -149,7 +150,12 @@ const Artistname = styled.div`
     margin: .3rem .5rem;
   }
 `
-
+export const HideText = styled.span`
+ @media (max-width: 600px){
+   display: none;
+ }
+ 
+`
 
 function index() {
   return (
@@ -159,13 +165,16 @@ function index() {
         <Content>
           <Textbox>
             <p className='para'>Hi, I am Rahul Raj.<br></br><br></br>
-             A <span className="span">self taught Frontend developer</span>(client side of the web) but i also have experience with fullstack development with Express.Js & MongoDB. I recently completed B-Tech in Information Technology from Guru Nanak Dev Engineering College, Ludhiana Punjab.<br></br>
+             A <span className="span">self taught Frontend developer</span> <HideText>
+               (client side of the web)
+             </HideText> but i do have some experience with fullstack development with Express.Js & MongoDB. 
+             I recently completed B-Tech in Information Technology from Guru Nanak Dev Engineering College, Ludhiana Punjab.<br></br>
               <br></br>
             I love working and creating web products as I could instanlty see my work done. After learning React.Js and working on several projects with this technology, working on web technologies have become so much fun for me. I enjoy this process of creating something new.
           </p>
           </Textbox>
           <Personal>
-            <h3 className="heading">My favourite music artists😍</h3>
+            <h3 className="heading" >My favourite music artists<span role="img" aria-label="string">😍</span></h3>
             <div className="artistbox">
               <Artistname>Prateek Khuhad</Artistname>
               <Artistname>Ritivz</Artistname>

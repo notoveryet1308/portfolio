@@ -50,14 +50,14 @@ function index() {
         <SkillDisplayBox>
           <SkillCard
             height='70vh'
-            height2='60vh'
+            height2='63vh'
             headTitle="FUNDAMENTAL Technologies"
             data={Fundamental}
 
           />
           <SkillCard
             height='60vh'
-            height2='45vh'
+            height2='48vh'
             headTitle="FRAMEWORK & RELATED"
             data={Framework}
 

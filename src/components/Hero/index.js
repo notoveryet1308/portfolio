@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from 'react';
-import { gsap, TimelineMax, Expo } from 'gsap';
+import { gsap } from 'gsap';
 import { Link } from 'react-scroll';
 import { Container } from '../../stylesheets/global';
 import github from '../../img/github.svg';
+
+
 import linkedin from '../../img/linkedin.png';
 import twitter from '../../img/twitter.png';
 
@@ -18,33 +20,43 @@ import {
   IconImg,
   RightContent,
   HeroText,
-  HeroTextBox
+  HeroTextBox,
+  HideText
 } from './style';
 
 
 
 function Index() {
   const design = useRef(null);
-  const prototype = useRef(null);
+  const research = useRef(null);
   const create = useRef(null);
   const deliver = useRef(null);
   const repeat = useRef(null);
 
   useEffect(() => {
-    gsap.to(design.current, 2, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut }, );
-    gsap.to( prototype.current, 3, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut }, );
-    gsap.to( create.current, 4, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut }, );
-    gsap.to(deliver.current, 5, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut }, );
-    gsap.to(repeat.current, 6, { css: { transform: "translateY(0)", zIndex: 44, visibility: "visible" }, opacity: 1, ease: Expo.easeInOut }, );
+    gsap.from([research.current, design.current, create.current, deliver.current, repeat.current], 2 , {
+      delay: 1,
+      ease: "power3.out",
+      y:64,
+      stagger:{
+        amount: 1
+      }
+    })
   }, [])
   return (
     <Container bgColor="#000">
       <HeroWrapper>
         <LeftContent>
-          <MainTitle>Web Developer</MainTitle>
-          <SubText>i keep learning so i keep doing better</SubText>
+          <MainTitle>Frontend Developer</MainTitle>
+          <SubText>
+            Specialized in developing frontend side of the web.
+            <HideText>
+              Have experince in developing fullstack web products too.
+            </HideText>
+          </SubText>
           <ButtonBox>
             <MyworkBtn to="works" duration={1000} smooth={true}>My Work</MyworkBtn>
+
           </ButtonBox>
           <SocilaMediaBox>
             <a
@@ -72,11 +84,10 @@ function Index() {
         </LeftContent>
         <RightContent>
           <HeroTextBox>
-            <HeroText ref={design}>DESIGN</HeroText>
+            <HeroText ref={research}>Research</HeroText>
           </HeroTextBox>
-          {/* <HeroText ref={design}>DESIGN</HeroText> */}
           <HeroTextBox>
-            <HeroText ref={prototype}>Prototype</HeroText>
+            <HeroText ref={design}>DESIGN</HeroText>
           </HeroTextBox>
           <HeroTextBox>
             <HeroText ref={create}>Create</HeroText>
