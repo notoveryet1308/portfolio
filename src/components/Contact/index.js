@@ -6,6 +6,7 @@ const Conatiner = styled.div`
   position: relative;
   background: #fff;
   padding-top: .1rem;
+  height: auto;
 `
 const ContactWrapper = styled.div`
  position: relative;

@@ -34,7 +34,7 @@ const Sidemenubox = styled.div`
   display: flex;
   flex-direction: column;
   visibility: ${props => props.visible};
-
+  backface-visibility: hidden;
   &:nth-child(3){
     padding-top: 2rem;
   }

@@ -149,11 +149,11 @@ export const MainTitle = styled.h1`
     font-size: 2.5rem;
   }
 `
-export const SubText = styled.h3`
+export const SubText = styled.h2`
   color: #FDFFA5;
   /* text-transform: capitalize; */
   font-size: 2rem;
-  font-weight:300;
+  font-weight:400;
   /* @media (max-width:900px){
     font-size:2rem;
   } */
@@ -229,7 +229,7 @@ export const IconImg = styled.img`
 export const HeroTextBox = styled.div`
   display: inline-block;
   margin: .7rem;
-
+  overflow: hidden;
   z-index: 3;
   @media (max-width:1000px){
     margin: 1rem;
@@ -245,7 +245,6 @@ export const HeroText = styled.h1`
  font-size: 5rem;
  font-family: 'Sansita', sans-serif;
  font-weight: 900;
- color: #fff;
  text-transform: uppercase;
  background: linear-gradient(264deg, #305cb4, #d95554, #e0e433, #e43370, #33e49f);
  background-size: 1000% 1000%;
@@ -255,10 +254,11 @@ export const HeroText = styled.h1`
  -webkit-background-clip: text;
  background-clip: text;
 color: transparent;
-transform: translateY(0);
+backface-visibility: hidden;
+/* transform: translateY(0);
 z-index: 200;
 visibility: visible;
-opacity: 1;
+opacity: 1; */
 /* animation-fill-mode: forwards; */
 @media (max-width:1150px){
    font-size: 4.5rem;

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { gsap, Expo } from 'gsap';
+import { gsap } from 'gsap';
 import { Link } from 'react-scroll';
 import { Container } from '../../stylesheets/global';
 import github from '../../img/github.svg';
@@ -34,18 +34,20 @@ function Index() {
   const repeat = useRef(null);
 
   useEffect(() => {
-    gsap.from(research.current, 2, { css: { transform: "translateY(4rem)", zIndex: -2, }, opacity: 0, ease: Expo.easeInOut },);
-    gsap.from(design.current, 3, { css: { transform: "translateY(4rem)", zIndex: -2, }, opacity: 0, ease: Expo.easeInOut },);
-    gsap.from(create.current, 4, { css: { transform: "translateY(4rem)", zIndex: -2, }, opacity: 0, ease: Expo.easeInOut },);
-    gsap.from(deliver.current, 5, { css: { transform: "translateY(4rem)", zIndex: -2, }, opacity: 0, ease: Expo.easeInOut },);
-    gsap.from(repeat.current, 6, { css: { transform: "translateY(4rem)", zIndex: -2, }, opacity: 0, ease: Expo.easeInOut },);
+    gsap.from([research.current, design.current, create.current, deliver.current, repeat.current], 2 , {
+      delay: 1,
+      ease: "power3.out",
+      y:64,
+      stagger:{
+        amount: 1
+      }
+    })
   }, [])
   return (
     <Container bgColor="#000">
       <HeroWrapper>
         <LeftContent>
           <MainTitle>Frontend Developer</MainTitle>
-          {/* <SubText>i keep learning so i keep doing better</SubText> */}
           <SubText>
             Specialized in developing frontend side of the web.
             <HideText>
